@@ -18,9 +18,13 @@ li {
   margin: 0 auto;
 }
 
-section {
+.section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.section:nth-child(2n) {
+  background-color: rgba(241, 237, 237, 0.6);
 }
 
 h2 {
