@@ -915,8 +915,17 @@
                     </li>
                     <li>
                         <h3>Дополнительные материалы:</h3>
-                        <ul>
-                            <li>Функциональные методы массивов- это еще одна крутая штука, без которой в разработке не обойтись, но нужно научится их
+                                <ul>
+                                    Будет полезно:
+                                </ul>
+                                <li>
+                                    1. Функциональные методы массивов - <a href="https://learn.javascript.ru/array-iteration">https://learn.javascript.ru/array-iteration</a>
+                                </li>
+                                <li>
+                                    2. Обязательно разобраться с Reduce - <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a>
+                                </li>
+                            <ul>
+                                <li>Функциональные методы массивов- это еще одна крутая штука, без которой в разработке не обойтись, но нужно научится их
                             правильно использовать и знать что вам возвращает метод, который вы юзаете.<br>
                             Помимо конспекта, записи вебов и живых вебинаров, я прикрепляю полезные ссылки на функциональные методы для работы с
                             массивами, чтобы можно было быстро подсмотреть как использовать и что возвращает тот или иной метод.<br>
@@ -972,29 +981,6 @@
                                                         Занятие 4 - Оформление текста. 09.12.20</a></li>
                         </ul> -->
                     </li>
-                    <li>
-                        <h3>Дополнительные материалы:</h3>
-                        <ul>
-                            <li>Методология БЭМ - <a
-                                    href="https://ru.bem.info/">https://ru.bem.info/</a>
-                            </li>
-                            <li>Полезный паттерн для структуры - <a
-                                    href="https://sass-guidelin.es/#the-7-1-pattern"
-                                    target="_blank">https://sass-guidelin.es/#the-7-1-pattern</a>
-                            </li>
-                            <li>Autoprefixer CSS online - <a
-                                    href="http://autoprefixer.github.io/ru/"
-                                    target="_blank">http://autoprefixer.github.io/ru/</a></li>
-                            <li>Документация SASS - <a
-                                    href="https://sass-lang.com/documentation"
-                                    target="_blank">https://sass-lang.com/documentation</a>
-                            </li>
-                            <li>Эстетичный Sass - <a
-                                    href="http://prgssr.ru/development/estetichnyj-sass-chast-1-arhitektura-i-organizaciya.html"
-                                    target="_blank">http://prgssr.ru/development/estetichnyj-sass-chast-1-arhitektura-i-organizaciya.html</a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </section>
@@ -1036,24 +1022,30 @@
                                         </li>
                                         <li>
                                             <h3>Дополнительные материалы:</h3>
-                                            <ul>
-                                                <!-- <li>Placeholders in Form Fields are Harmful - <a
-                                                                                            href="https://www.youtube.com/watch?v=jrigp2L-P-0&feature=youtu.be&ab_channel=NNgroup">https://www.youtube.com/watch?v=jrigp2L-P-0&feature=youtu.be&ab_channel=NNgroup</a>
-                                                                                    </li>
-                                                                                    <li>Кастомные чекбоксы правильно - <a
-                                                                                            href="https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=VadimMakeev"
-                                                                                            target="_blank">https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=VadimMakeev</a>
-                                                                                    </li>
-                                                                                    <li>Элемент HTML &lt;input&gt; - <a
-                                                                                            href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input"
-                                                                                            target="_blank">https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input</a></li>
-                                                                                    <li>Ваша первая HTML форма - <a
-                                                                                            href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form"
-                                                                                            target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form</a>
-                                                                                    </li>
-                                                                                    <li>Как правильно и семантически прятать - <a
-                                                                                            href="https://htmlacademy.ru/blog/boost/frontend/short-12"
-                                                                                            target="_blank">https://htmlacademy.ru/blog/boost/frontend/short-12</a> -->
+                                            <br>
+                                                В этом модуле будем знакомится со всплытием и погружением событий в js, делегированием и intersection Observer API.</br>
+                                                Событие на элементе происходит следующим образом - обработчики сначала срабатывают на элементе, на котором произошло
+                                                какое-то событие (click, change, submit и т.д.), потом на его родителе, затем выше и так далее, вверх по цепочке
+                                                предков.</br>
+                                                Нужно понимать чем отличаются event.target от event.currentTarget.</br>
+                                                На каком бы элементе мы ни поймали событие, всегда можно узнать, где конкретно оно произошло.</br>
+                                                event.target - самый глубокий элемент, который вызывает событие, называется «целевым» или «исходным» элементом.</br>
+                                                event.currentTarget - Определяет элемент, в котором в данный момент обрабатывается событие, при движении события внутри
+                                                DOM. Всегда совпадает элементом, на котором обработчик события был назначен, в отличие от свойства event.target.</br>
+                                                Идея делегирования событий заключается в том, что если у нас есть много элементов, события на которых нужно обрабатывать
+                                                похожим образом, то вместо того, чтобы назначать обработчик каждому, мы ставим один обработчик на их общего предка.</br>
+                                                <ul>
+                                                    Будет полезно:
+                                                    <li>
+                                                        Всплытие и погружение событий - <a href="https://learn.javascript.ru/bubbling-and-capturing">https://learn.javascript.ru/bubbling-and-capturing</a>
+                                                    </li>
+                                                    <li>
+                                                        Делегирование событий - <a href="https://habr.com/ru/post/512782/">https://habr.com/ru/post/512782/</a>
+                                                    </li>
+                                                    <li>
+                                                        intersection Observer API и ленивая загрузка изображений - <a href="https://habr.com/ru/company/ruvds/blog/453586/">https://habr.com/ru/company/ruvds/blog/453586/</a>
+                                                    </li>
+                                                </ul>
                                         </li>
                                     </ul>
                                     </li>
@@ -1222,23 +1214,46 @@
                                         <li>
                                             <h3>Дополнительные материалы:</h3>
                                             <ul>
-                                                <!-- <li>Placeholders in Form Fields are Harmful - <a
-                                                                    href="https://www.youtube.com/watch?v=jrigp2L-P-0&feature=youtu.be&ab_channel=NNgroup">https://www.youtube.com/watch?v=jrigp2L-P-0&feature=youtu.be&ab_channel=NNgroup</a>
+                                                Вот вы уже и подобрались к асинхронному JS.<br>
+                                                Объект Promise используется для отложенных и асинхронных вычислений, и так как язык программирования
+                                                javascript однопоточный, поэтому одновременно несколько действий он выполнять не может - для этого и существуют
+                                                асинхронные операции.<br>
+                                                Вам нужно разобраться с тем как работают асинхронные функции и в какой момент они начинают свое выполнения.
+                                                Какие состояния бывают у промиса и что они значат, а так же для чего нужен метод then() при работе с промисами.<br>
+                                                Для этого закрепляю для вас ссылочки с полезной информацией.<br>
+                                                <ul>
+                                                    <li>
+                                                        <ul>
+                                                            Рекурсия:
+                                                            <li>
+                                                                <a href="https://habr.com/ru/post/337030/">https://habr.com/ru/post/337030/</a>
                                                             </li>
-                                                            <li>Кастомные чекбоксы правильно - <a
-                                                                    href="https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=VadimMakeev"
-                                                                    target="_blank">https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=VadimMakeev</a>
+                                                            <li>
+                                                                <a href="https://code.tutsplus.com/ru/tutorials/understanding-recursion-with-javascript--cms-30346">https://code.tutsplus.com/ru/tutorials/understanding-recursion-with-javascript--cms-30346</a>
                                                             </li>
-                                                            <li>Элемент HTML &lt;input&gt; - <a
-                                                                    href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input"
-                                                                    target="_blank">https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input</a></li>
-                                                            <li>Ваша первая HTML форма - <a
-                                                                    href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form"
-                                                                    target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form</a>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Асинхронный js - <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Asynchronous/Introducing">https://developer.mozilla.org/ru/docs/Learn/JavaScript/Asynchronous/Introducing</a>
+                                                    </li>
+                                                    <li>
+                                                        Объект Promise - <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise">https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise</a>
+                                                    </li>
+                                                    <li>
+                                                        Метод then() - <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then</a>
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            setTimeout, setInterval
+                                                            <li>
+                                                               <a href="https://developer.mozilla.org/ru/docs/Web/API/WindowTimers/setTimeout">https://developer.mozilla.org/ru/docs/Web/API/WindowTimers/setTimeout</a>
                                                             </li>
-                                                            <li>Как правильно и семантически прятать - <a
-                                                                    href="https://htmlacademy.ru/blog/boost/frontend/short-12"
-                                                                    target="_blank">https://htmlacademy.ru/blog/boost/frontend/short-12</a> -->
+                                                            <li>
+                                                                <a href="https://developer.mozilla.org/ru/docs/Web/API/WindowOrWorkerGlobalScope/setInterval">https://developer.mozilla.org/ru/docs/Web/API/WindowOrWorkerGlobalScope/setInterval</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                         </li>
                                     </ul>
                                     </li>
@@ -1282,24 +1297,35 @@
                                         </li>
                                         <li>
                                             <h3>Дополнительные материалы:</h3>
+                                            Работа с запросами на сервер - это очень важная часть изучения js. Вся работа с api запросами - это асинхронных код и
+                                            очень важно понимать как он работает в отличии от синхронного.<br>
+                                            Для запросов на сервер можно использовать fetch - это дефолтный метод js который позволяет легко и логично
+                                            получать ресурсы по сети асинхронно.<br>
+                                            Так же есть библиотеки с помощью которых можно очень удобно работать с запросами, приведу одну из таких в доп
+                                            материалах внизу.<br>
+                                            AJAX (Asynchronous Javascript And Xml) - технология обращения к серверу без перезагрузки страницы. За счёт
+                                            этого уменьшается время отклика и веб-приложение по интерактивности больше напоминает десктоп.<br>
+                                            Несмотря на то, что в названии технологии присутствует буква X (от слова XML), использовать XML вовсе не
+                                            обязательно. Под AJAX подразумевают любое общение с сервером без перезагрузки страницы, организованное при помощи
+                                            JavaScript.<br>
                                             <ul>
-                                                <!-- <li>Placeholders in Form Fields are Harmful - <a
-                                                                    href="https://www.youtube.com/watch?v=jrigp2L-P-0&feature=youtu.be&ab_channel=NNgroup">https://www.youtube.com/watch?v=jrigp2L-P-0&feature=youtu.be&ab_channel=NNgroup</a>
-                                                            </li>
-                                                            <li>Кастомные чекбоксы правильно - <a
-                                                                    href="https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=VadimMakeev"
-                                                                    target="_blank">https://www.youtube.com/watch?v=E6kLaaQFctU&ab_channel=VadimMakeev</a>
-                                                            </li>
-                                                            <li>Элемент HTML &lt;input&gt; - <a
-                                                                    href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input"
-                                                                    target="_blank">https://developer.mozilla.org/ru/docs/Web/HTML/Element/Input</a></li>
-                                                            <li>Ваша первая HTML форма - <a
-                                                                    href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form"
-                                                                    target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form</a>
-                                                            </li>
-                                                            <li>Как правильно и семантически прятать - <a
-                                                                    href="https://htmlacademy.ru/blog/boost/frontend/short-12"
-                                                                    target="_blank">https://htmlacademy.ru/blog/boost/frontend/short-12</a> -->
+                                                Дополнительные материалы:
+                                                <li>
+                                                    Fetch - <a href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch">https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch</a>
+                                                </li>
+                                                <li>
+                                                    Библиотека для работы с запросами Axios :
+                                                </li>
+                                                <li>
+                                                    Сравнение fetch и axios - <a href="https://habr.com/ru/company/ruvds/blog/477286/">https://habr.com/ru/company/ruvds/blog/477286/</a>
+                                                </li>
+                                                <li>
+                                                    Документация axios на русском - <a href="https://github.com/klesarev/axios-rus-docs/tree/master/docs">https://github.com/klesarev/axios-rus-docs/tree/master/docs</a>
+                                                </li>
+                                                <li>
+                                                    AJAX для новичков - <a href="https://habr.com/ru/post/14246/">https://habr.com/ru/post/14246/</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                     </li>
@@ -1382,10 +1408,12 @@
                                     target="_blank">20.03.21. JS31. BLENDED1. 17:00 Хворостянный</a></li>
                             <li><a href="https://www.youtube.com/watch?v=19tHCmuhGD4&ab_channel=GoIT"
                                         target="_blank">03.04.21 FecOn31 Blended1 (Хворостяный)</a></li>
-                            <!-- <li><a href="https://www.youtube.com/watch?v=__8HFbflh1w&feature=youtu.be&ab_channel=GoIT"
-                                            target="_blank">[HTML+CSS #31]FecOn31. Доп практика. Ментор Данилко. блендед1. 17-00</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=jWEhXWX3FE0&feature=youtu.be&ab_channel=GoIT"
-                                                target="_blank">20.02.21. FECOn31. Данилко. доп практика. blended1. 17-00-20-00</a></li> -->
+                            <li><a href="https://www.youtube.com/watch?v=cmKXrkcC0CA&ab_channel=GoIT"
+                                            target="_blank">30.04.21 JS31. Блендед1. Хворостяный 19:30</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=N7ZzqUv6p3s&ab_channel=GoIT"
+                                                target="_blank">15.05.21. JS31. Блендед1. Хворостяный 17:00</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=CDM19tM1was&ab_channel=GoIT" target="_blank">30.05.21. JS31. Блендед1.
+                                                        Хворостяный 17:00</a></li>
                         </ul>
             </div>
         </section>
